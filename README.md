@@ -54,7 +54,7 @@ This is a structured project package, not a claim that the missing source datase
 
 ## Author
 
-Add your own name, enrollment number, course, and institution before submission.
+name Tanishq patel, enrollment number en25ca3020184, course bca , and institution medicaps.ac.in
 
 ## Companion HTML Website
 
