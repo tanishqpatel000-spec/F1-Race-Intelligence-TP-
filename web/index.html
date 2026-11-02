@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formula 1 Race Intelligence — interactive motorsport analytics project.">
+  <title>F1 Race Intelligence | Analytics</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#home"><span class="brand-mark">F1</span><span>RACE INTELLIGENCE</span></a><nav><a href="#overview">Overview</a><a href="#analysis">Analysis</a><a href="#project">Project</a></nav><span class="live-tag">DATA ANALYTICS PROJECT</span></header>
+<main id="home">
+<section class="hero"><div class="hero-copy"><p class="eyebrow">MOTORSPORT • DATA • PERFORMANCE</p><h1>Every lap tells<br><em>a story.</em></h1><p class="intro">Explore Formula 1 performance through race results, driver statistics, circuits, qualifying, and race intelligence.</p><div class="hero-actions"><a class="button primary" href="#analysis">Explore analysis <span>↗</span></a><a class="button secondary" href="#project">About the project</a></div><p class="note">Dashboard interface preview. Connect your verified F1 dataset to display actual results.</p></div><div class="hero-art"><div class="track-line"></div><div class="speed-card"><span>RACE DATA</span><strong>01</strong><small>INSIGHT STARTS HERE</small></div><div class="hero-number">F1</div></div></section>
+<section class="stats" id="overview"><article><span>01 / PERFORMANCE</span><strong>Drivers</strong><p>Compare race and championship performance.</p></article><article><span>02 / CONSTRUCTORS</span><strong>Teams</strong><p>Explore team results and points trends.</p></article><article><span>03 / CIRCUITS</span><strong>Tracks</strong><p>Understand circuit locations and characteristics.</p></article><article><span>04 / RACE DATA</span><strong>Strategy</strong><p>Investigate laps, qualifying, tyres and race events.</p></article></section>
+<section class="analysis" id="analysis"><div class="section-head"><div><p class="eyebrow">THE ANALYTICS</p><h2>Race intelligence<br><em>at a glance.</em></h2></div><p class="section-desc">Use the CSV loader below to preview your own data. Sample values are illustrative and are not official F1 statistics.</p></div>
+<div class="toolbar"><label class="upload">Upload CSV <input type="file" id="csvFile" accept=".csv,text/csv"></label><span id="fileStatus">Showing illustrative demo data</span><button id="resetBtn" class="reset">Reset demo</button></div>
+<div class="charts"><article class="chart-card wide"><div class="card-head"><div><span class="eyebrow">01 / DRIVER PERFORMANCE</span><h3>Points by driver</h3></div><span class="unit">POINTS</span></div><div id="driverChart" class="bar-chart" aria-label="Driver points chart"></div></article>
+<article class="chart-card"><div class="card-head"><div><span class="eyebrow">02 / TEAM COMPARISON</span><h3>Constructor points</h3></div></div><div id="teamChart" class="bar-chart compact"></div></article>
+<article class="chart-card"><div class="card-head"><div><span class="eyebrow">03 / DATA EXPLORER</span><h3>Dataset preview</h3></div></div><div class="table-wrap"><table id="dataTable"><thead><tr><th>Driver</th><th>Team</th><th>Points</th></tr></thead><tbody></tbody></table></div></article></div>
+<p class="data-warning">Note: Demo chart values are placeholders for interface preview only. Upload a CSV containing columns such as Driver, Team, Points to view your own records.</p>
+</section>
+<section class="project" id="project"><div><p class="eyebrow">ABOUT THIS PROJECT</p><h2>From race data<br>to <em>real insight.</em></h2></div><div class="project-copy"><p>Formula 1 Race Intelligence is an educational data analytics project combining data preparation, SQL exploration, Python utilities, and Tableau visualization.</p><div class="project-links"><a href="../README.md">Project README ↗</a><a href="../../docs/F1_Race_Intelligence_Project_Report.pdf">Project report ↗</a></div><p class="small">The Tableau workbook and source dataset are maintained separately in this repository. The web page is a companion interface and does not replace the Tableau dashboard.</p></div></section>
+</main><footer><span>F1 RACE INTELLIGENCE</span><span>EDUCATIONAL DATA ANALYTICS PROJECT</span></footer>
+<script src="static/app.js"></script>
+</body></html>
